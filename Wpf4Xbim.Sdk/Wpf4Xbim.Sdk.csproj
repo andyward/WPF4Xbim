@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Revit.RevitApi.x64" Version="2023.0.0" />
+    <PackageReference Include="Revit.RevitApiUI.x64" Version="2023.0.0" />
+    <PackageReference Include="Xbim.Geometry.Engine.Interop" Version="5.1.437" />
+    <PackageReference Include="Xbim.WindowsUI" Version="5.1.228" />
+  </ItemGroup>
+
+</Project>

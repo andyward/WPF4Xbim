@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf4Xbim.Sdk.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:hlx="http://helix-toolkit.org/wpf"
+        xmlns:xbim="http://schemas.Xbim.com/Presentation"
+             xmlns:local="clr-namespace:Wpf4Xbim.Sdk"
+             mc:Ignorable="d" 
+             Height="300" Width="500" Title="HelixViewport3D">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <xbim:DrawingControl3D Grid.Column="1" Model="{Binding DataContext.Model}"/>
+        <hlx:HelixViewport3D Grid.Column="0"></hlx:HelixViewport3D>
+    </Grid>
+</Window>
